@@ -11,13 +11,18 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = True
 Attribute VB_PredeclaredId = False
 Attribute VB_Exposed = False
-Public nombre As String
-Public edad As Integer
-Public peso As Double
-Public raza As String
-Public especie As String
-Public color As String
-Public amigable As Boolean
-Public tamaño As String
-Public talle As Double
+Private nombre As String
+Private edad As Integer
+Private peso As Double
+Private raza As String
+Private especie As String
+Private color As String
+Private amigable As Boolean
+Private tamaño As String
+Private talle As Double
 
+Public Sub constructor(thisnombre As String)
+    
+    nombre = thisnombre
+    
+End Sub

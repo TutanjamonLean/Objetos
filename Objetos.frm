@@ -60,48 +60,49 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
+Public Dato1 As String
 Dim objMascotas1 As New Mascotas
 
 Private Sub Command1_Click()
     
-    objMascotas1.nombre = "Pepe"
+    objMascotas1.constructor ("Pepe")
     
-    objMascotas1.edad = 69
-    
-    objMascotas1.peso = 60
-    
-    objMascotas1.raza = "ario"
-    
-    objMascotas1.especie = "antisemita"
-    
-    objMascotas1.color = "humilde"
-    
-    objMascotas1.amigable = False
-    
-    objMascotas1.tamaño = "enano"
-    
-    objMascotas1.talle = 60
+'    objMascotas1.edad = 69
+'
+'    objMascotas1.peso = 60
+'
+'    objMascotas1.raza = "ario"
+'
+'    objMascotas1.especie = "antisemita"
+'
+'    objMascotas1.color = "humilde"
+'
+'    objMascotas1.amigable = False
+'
+'    objMascotas1.tamaño = "enano"
+'
+'    objMascotas1.talle = 60
     
 End Sub
 
 Private Sub Command2_Click()
     
-    Print objMascotas1.nombre
+    Print objMascotas1
     
-    Print objMascotas1.edad
-    
-    Print objMascotas1.peso
-    
-    Print objMascotas1.raza
-    
-    Print objMascotas1.especie
-    
-    Print objMascotas1.color
-    
-    Print objMascotas1.amigable
-    
-    Print objMascotas1.tamaño
-    
-    Print objMascotas1.talle
+'    Print objMascotas1.edad
+'
+'    Print objMascotas1.peso
+'
+'    Print objMascotas1.raza
+'
+'    Print objMascotas1.especie
+'
+'    Print objMascotas1.color
+'
+'    Print objMascotas1.amigable
+'
+'    Print objMascotas1.tamaño
+'
+'    Print objMascotas1.talle
     
 End Sub
