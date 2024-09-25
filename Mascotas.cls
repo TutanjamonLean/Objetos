@@ -20,9 +20,41 @@ Private color As String
 Private amigable As Boolean
 Private tamaño As String
 Private talle As Double
+Public Function constructor(thisEdad As Integer)
 
-Public Sub constructor(thisnombre As String)
+'    nombre = thisNombre
+    edad = thisEdad
+'    peso = thisPeso
+'    raza = thisRaza
+'    especie = thisEspecie
+'    color = thisColor
+'    amigable = thisAmigable
+'    tamaño = thisTamaño
+'    talle = thisTalla
     
-    nombre = thisnombre
+End Function
+'Public Function Getnombre() As String
+'
+'    Getnombre = nombre
+'
+'End Function
+
+Public Function Getedad() As Integer
+
+    Getedad = edad
+
+End Function
+
+Public Function NivelarEdad() As Boolean
     
-End Sub
+    If edad > 8 Then
+    
+        NivelarEdad = True
+        
+    Else
+    
+        NivelarEdad = False
+    
+    End If
+
+End Function

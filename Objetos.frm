@@ -19,6 +19,14 @@ Begin VB.Form Form1
    ScaleWidth      =   21075
    StartUpPosition =   3  'Windows Default
    WindowState     =   2  'Maximized
+   Begin VB.TextBox Text1 
+      Height          =   975
+      Left            =   5280
+      TabIndex        =   2
+      Text            =   "Text1"
+      Top             =   3600
+      Width           =   1695
+   End
    Begin VB.CommandButton Command2 
       Caption         =   "Command2"
       BeginProperty Font 
@@ -60,13 +68,10 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
-Public Dato1 As String
+Public Medir As String
 Dim objMascotas1 As New Mascotas
-
 Private Sub Command1_Click()
-    
-    objMascotas1.constructor ("Pepe")
-    
+        
 '    objMascotas1.edad = 69
 '
 '    objMascotas1.peso = 60
@@ -87,7 +92,8 @@ End Sub
 
 Private Sub Command2_Click()
     
-    Print objMascotas1
+    Print objMascotas1.Getedad
+
     
 '    Print objMascotas1.edad
 '
@@ -106,3 +112,10 @@ Private Sub Command2_Click()
 '    Print objMascotas1.talle
     
 End Sub
+
+Private Sub Form_Activate()
+    
+    objMascotas1.constructor 15
+    
+End Sub
+
